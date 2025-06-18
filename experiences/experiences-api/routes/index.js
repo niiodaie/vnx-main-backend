@@ -1,1 +1,0 @@
-console.log("Ventures API ready");
