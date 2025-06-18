@@ -1,1 +1,1 @@
-
+console.log("Trends API ready");
