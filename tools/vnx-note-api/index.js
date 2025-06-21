@@ -1,7 +1,8 @@
-const express = require('express');
-const router = express.Router();
-const notebookRoutes = require('./routes/vnx-notebook');
+import express from 'express';
+import notebookRoutes from './routes/vnx-notebook.js';
 
+const router = express.Router();
 router.use('/notes', notebookRoutes);
 
-module.exports = router;
+// ✅ Change this line:
+export default router; // instead of module.exports
