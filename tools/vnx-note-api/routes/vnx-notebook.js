@@ -1,4 +1,3 @@
-
 const express = require('express');
 const fs = require('fs');
 const { v4: uuidv4 } = require('uuid');
@@ -56,4 +55,4 @@ router.delete('/:id', (req, res) => {
   res.status(204).send();
 });
 
-module.exports = router;
+export default router;
