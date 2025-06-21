@@ -1,9 +1,9 @@
-const express = require('express');
-const fs = require('fs');
-const { v4: uuidv4 } = require('uuid');
-const router = express.Router();
+import express from 'express';
+import fs from 'fs';
+import { v4 as uuidv4 } from 'uuid';
 
-const FILE_PATH = './notes.json'; // optional fallback file
+const router = express.Router();
+const FILE_PATH = './notes.json';
 let notes = [];
 
 // Load notes from file if it exists
