@@ -1,9 +1,7 @@
-
-import express from 'express';
+const express = require('express');
 const router = express.Router();
+const notebookRoutes = require('./routes/vnx-notebook');
 
-router.get('/', (req, res) => {
-  res.send('VNX Note API is live!');
-});
+router.use('/notes', notebookRoutes);
 
-export default router;
+module.exports = router;
